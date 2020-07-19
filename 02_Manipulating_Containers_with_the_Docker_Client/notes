@@ -1,0 +1,11 @@
+docker create <container-name>: create a new container 
+docker create <container-name> ping google.com: a new container runs command "ping google.com"
+docker start -a <container-id>: return all output attached from the container-id
+docker ps --all: list all containers
+docker system prune: remove all containers, all networks not used, all dangling images, all build cache
+docker logs <container-id>: return all logs of the container
+docker stop <container-id>: stop a container, allow 10 secs to wrap things up; recommanded process
+docker kill <container-id>: kill everything right away (no grace period)
+
+docker exec -it <container id> <command>: -it: type input to the container
+docker exec -it <container id> sh: full terminal access inside context of the container 
