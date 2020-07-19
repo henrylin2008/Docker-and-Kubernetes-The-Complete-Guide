@@ -1,0 +1,14 @@
+creating a Dockerfile: 
+	-Specify a base image
+	-run some commands to install additional programs
+	-Specify a comand to run on a container startup
+
+Dockerfile commands: 
+-adding commands at the end of the list: will used the cache of anything before
+-adding a new command on the top of the command list: will not used the cache and building a new image from scratch 
+
+Tagging an image: 
+docker build -t <tags the image> <diretory of files/folders> 
+-ex: 
+docker build -t hlin/redis:latest . 
+
